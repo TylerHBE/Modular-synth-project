@@ -1,0 +1,23 @@
+Modular Synth
+
+The project is a modular synth, capable of plugging into a MIDI keyboard/device and outputting sound into an AUX output. There will also be a screen with a menu for selecting between sounds.
+
+Inputs
+    There are 3 exterior inputs:
+        1. Power
+        2. MIDI (via USB)
+        3. Menu controls (one joystick and one button)
+
+Outputs
+    There are 2 exterior outputs:
+        1. AUX output
+        2. Menu screen
+
+Menu
+    There are 3 vertical levels of access in the menu system. Scrolling up/down will take the user through levels, each one retaining their state before switching.
+        1. Bank / Category info
+            Able to switch preset banks / category of presets (ie: synth pads, synth plucks, etc). When first loaded into this level, users will see the text: Banks. Upon scrolling horizontally on the joystick, they will see: Categories. Continuing to scroll will result in continually switching between banks and categories. Upon pressing the button on either category, the user will be entered into a list of selections. Scrolling left, there will be a link called back, if pressed, it will take the user back to the selection between banks / category. Pressing any of the selections other than back will change the user's available presets and reset the currently used preset to the first entry of whatever category the user selected.
+        2. Preset toggle
+            In this level, the user can scroll left/right between presets. At first, the first available preset is chosen, and anytime a preset is chosen, the system will place a checkmark/some other symbol next to the preset name to indicate that the preset is used- and that preset will be used for all output. 
+        3. Power and system info
+            Power off selection will put the synth in 'off mode,' with no input/output and the display is turned off, where clicking the button will turn the synth on again.

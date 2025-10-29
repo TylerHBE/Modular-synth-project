@@ -1,6 +1,7 @@
 Modular Synth
 
 The project is a modular synth, capable of plugging into a MIDI keyboard/device and outputting sound into an AUX output. There will also be a screen with a menu for selecting between sounds.
+The project will use an STM32 board and a basic MIDI keyboard
 
 Inputs
     There are 3 exterior inputs:
@@ -12,6 +13,10 @@ Outputs
     There are 2 exterior outputs:
         1. AUX output
         2. Menu screen
+        3. Power light
+
+Note on MIDI
+    The MIDI keyboard that I am using has a basic USB output, so my keyboard will have to use a USB Micro-B OTG adapter to connect to the STM32 board.
 
 Menu
     There are 3 vertical levels of access in the menu system. Scrolling up/down will take the user through levels, each one retaining their state before switching.
